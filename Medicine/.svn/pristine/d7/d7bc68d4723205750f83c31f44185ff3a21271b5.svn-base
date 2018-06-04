@@ -1,0 +1,79 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
+using Medicine.Models;
+
+namespace Medicine.AdminForms
+{
+    public partial class ManufacturerList : MetroForm
+    {
+        public ManufacturerList()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            ManufacturerCreate create = new ManufacturerCreate(this);
+            create.UpdateEventHandler += Create_UpdateEventHandler1;
+            create.ShowDialog();
+        }
+
+        private void Create_UpdateEventHandler1(object sender, ManufacturerCreate.UpdateEventArgs args)
+        {
+            BindSource();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MedicalEntities db = new MedicalEntities();
+                int id = int.Parse(grdManufacturer.SelectedRows[0].Cells[0].Value.ToString());
+                Manufacturers manufacturers = db.Manufacturers.Find(id);
+                db.Manufacturers.Remove(manufacturers);
+                db.SaveChanges();
+                BindSource();
+                MetroMessageBox.Show(this, "Üretici Firma başarıyla silindi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, "Üretici Firma silinirken hata ile karşılaşıldı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        private void Create_UpdateEventHandler(object sender, PersonelCreate.UpdateEventArgs args)
+        {
+            BindSource();
+        }
+        private void ManufacturerList_Load(object sender, EventArgs e)
+        {
+            BindSource();
+        }
+        public void BindSource()
+        {
+            grdManufacturer.DataSource = null;
+
+            MedicalEntities db = new MedicalEntities();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("Name", typeof(string));
+            foreach (var item in db.Manufacturers.ToList())
+            {
+                DataRow dr = dt.NewRow();
+                dr["ID"] = item.ID;
+                dr["Name"] = item.Name;
+                dt.Rows.Add(dr);
+            }
+            grdManufacturer.DataSource = dt;
+        }
+    }
+}

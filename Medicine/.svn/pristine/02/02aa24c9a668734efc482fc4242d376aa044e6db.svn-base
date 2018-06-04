@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
+using Medicine.Models;
+namespace Medicine.AdminForms
+{
+    public partial class PersonelCreate : MetroForm
+    {
+        MedicalEntities db = new MedicalEntities();
+        public PersonelCreate(PersonelList list)
+        {
+            InitializeComponent();
+            personelList = list;
+        }
+        public delegate void UpdateDelegate(object sender, UpdateEventArgs args);
+        public event UpdateDelegate UpdateEventHandler;
+        PersonelList personelList;
+        public class UpdateEventArgs : EventArgs
+        {
+            public string Data { get; set; }
+        }
+        protected void raiseUpdate()
+        {
+            UpdateEventArgs args = new UpdateEventArgs();
+            UpdateEventHandler?.Invoke(this, args);
+        }
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Users user = new Users();
+                user.NameSurname = txtUserName.Text;
+                user.Email = txtEmail.Text;
+                user.Phone = txtPhone.Text;
+                user.UserName = txtUserName.Text;
+                user.Password = txtUserName.Text;
+                user.isManager = false;
+                db.Users.Add(user);
+                db.SaveChanges();
+                DialogResult result = MetroMessageBox.Show(this, "Kullanıcı başarıyla kayıt edildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    PersonelList list = new PersonelList();
+                    raiseUpdate();
+                    this.Close();
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
+        }
+    }
+}

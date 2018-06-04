@@ -1,0 +1,130 @@
+﻿namespace Medicine.AdminForms
+{
+    partial class Dashboard
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            this.btnDiseases = new MetroFramework.Controls.MetroTile();
+            this.btnMedicines = new MetroFramework.Controls.MetroTile();
+            this.btnManufacturers = new MetroFramework.Controls.MetroTile();
+            this.btnPersonels = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.SuspendLayout();
+            // 
+            // btnDiseases
+            // 
+            this.btnDiseases.ActiveControl = null;
+            this.btnDiseases.Location = new System.Drawing.Point(31, 96);
+            this.btnDiseases.Name = "btnDiseases";
+            this.btnDiseases.Size = new System.Drawing.Size(113, 82);
+            this.btnDiseases.TabIndex = 0;
+            this.btnDiseases.Text = "Hastalıklar";
+            this.btnDiseases.TileImage = ((System.Drawing.Image)(resources.GetObject("btnDiseases.TileImage")));
+            this.btnDiseases.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDiseases.UseSelectable = true;
+            this.btnDiseases.UseTileImage = true;
+            this.btnDiseases.Click += new System.EventHandler(this.btnDiseases_Click);
+            // 
+            // btnMedicines
+            // 
+            this.btnMedicines.ActiveControl = null;
+            this.btnMedicines.Location = new System.Drawing.Point(199, 96);
+            this.btnMedicines.Name = "btnMedicines";
+            this.btnMedicines.Size = new System.Drawing.Size(113, 82);
+            this.btnMedicines.TabIndex = 0;
+            this.btnMedicines.Text = "İlaçlar";
+            this.btnMedicines.TileImage = ((System.Drawing.Image)(resources.GetObject("btnMedicines.TileImage")));
+            this.btnMedicines.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMedicines.UseSelectable = true;
+            this.btnMedicines.UseTileImage = true;
+            this.btnMedicines.Click += new System.EventHandler(this.btnMedicines_Click);
+            // 
+            // btnManufacturers
+            // 
+            this.btnManufacturers.ActiveControl = null;
+            this.btnManufacturers.Location = new System.Drawing.Point(359, 96);
+            this.btnManufacturers.Name = "btnManufacturers";
+            this.btnManufacturers.Size = new System.Drawing.Size(113, 82);
+            this.btnManufacturers.TabIndex = 0;
+            this.btnManufacturers.Text = "Firmalar";
+            this.btnManufacturers.TileImage = ((System.Drawing.Image)(resources.GetObject("btnManufacturers.TileImage")));
+            this.btnManufacturers.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnManufacturers.UseSelectable = true;
+            this.btnManufacturers.UseTileImage = true;
+            this.btnManufacturers.Click += new System.EventHandler(this.btnManufacturers_Click);
+            // 
+            // btnPersonels
+            // 
+            this.btnPersonels.ActiveControl = null;
+            this.btnPersonels.Location = new System.Drawing.Point(267, 184);
+            this.btnPersonels.Name = "btnPersonels";
+            this.btnPersonels.Size = new System.Drawing.Size(205, 82);
+            this.btnPersonels.TabIndex = 0;
+            this.btnPersonels.Text = "Personeller";
+            this.btnPersonels.TileImage = ((System.Drawing.Image)(resources.GetObject("btnPersonels.TileImage")));
+            this.btnPersonels.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPersonels.UseSelectable = true;
+            this.btnPersonels.UseTileImage = true;
+            this.btnPersonels.Click += new System.EventHandler(this.btnPersonels_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(31, 184);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(199, 82);
+            this.metroTile5.TabIndex = 0;
+            this.metroTile5.Text = "Bağlama";
+            this.metroTile5.UseSelectable = true;
+            // 
+            // Dashboard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(495, 300);
+            this.Controls.Add(this.metroTile5);
+            this.Controls.Add(this.btnPersonels);
+            this.Controls.Add(this.btnManufacturers);
+            this.Controls.Add(this.btnMedicines);
+            this.Controls.Add(this.btnDiseases);
+            this.Movable = false;
+            this.Name = "Dashboard";
+            this.Text = "Hoşgeldiniz";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private MetroFramework.Controls.MetroTile btnDiseases;
+        private MetroFramework.Controls.MetroTile btnMedicines;
+        private MetroFramework.Controls.MetroTile btnManufacturers;
+        private MetroFramework.Controls.MetroTile btnPersonels;
+        private MetroFramework.Controls.MetroTile metroTile5;
+    }
+}

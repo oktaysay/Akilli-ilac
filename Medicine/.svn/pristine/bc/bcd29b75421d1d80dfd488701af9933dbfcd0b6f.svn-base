@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
+using Medicine.Models;
+
+namespace Medicine.AdminForms
+{
+    public partial class MedicineCreate : MetroForm
+    {
+        MedicalEntities db = new MedicalEntities();
+        public MedicineCreate(MedicineList list)
+        {
+            InitializeComponent();
+            mediList = list;
+        }
+        public delegate void UpdateDelegate(object sender, UpdateEventArgs args);
+        public event UpdateDelegate UpdateEventHandler;
+        MedicineList mediList;
+
+        public class UpdateEventArgs : EventArgs
+        {
+            public string Data { get; set; }
+        }
+        protected void raiseUpdate()
+        {
+            UpdateEventArgs args = new UpdateEventArgs();
+            UpdateEventHandler?.Invoke(this, args);
+        }
+        private void MedicineCreate_Load(object sender, EventArgs e)
+        {
+            List<Manufacturers> list = db.Manufacturers.ToList();
+            Manufacturers ma = new Manufacturers();
+            ma.Name = "Firma Seçiniz";
+            ma.ID = -1;
+            list.Add(ma);
+            cmbbxManufacturer.DataSource = list.OrderBy(x=>x.ID).ToList();
+            cmbbxManufacturer.DisplayMember = "Name";
+            cmbbxManufacturer.ValueMember = "ID";
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Medicines medicine = new Medicines();
+                medicine.Name = txtMedicineName.Text;
+                medicine.BarcodeNo = txtBarcodeNo.Text;
+                medicine.ManufacturerId = int.Parse(cmbbxManufacturer.SelectedValue.ToString());
+                medicine.Price = Convert.ToDouble(txtPrice.Text.Replace(".",","));
+                medicine.PurposeOfUsing = txtPurposeOfUsing.Text;
+                medicine.SideEffects = txtSideEffects.Text;
+                db.Medicines.Add(medicine);
+                db.SaveChanges();
+                DialogResult result = MetroMessageBox.Show(this, "İlaç başarıyla kayıt edildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    raiseUpdate();
+                    this.Close();
+                }
+
+            }
+            catch (Exception)
+            {
+                DialogResult result = MetroMessageBox.Show(this, "İlaç oluştururken hata ile karşılaşıldı.", "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

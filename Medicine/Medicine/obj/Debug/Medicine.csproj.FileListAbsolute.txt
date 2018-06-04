@@ -1,0 +1,62 @@
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\Medicine.exe.config
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\Medicine.exe
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\Medicine.pdb
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\EntityFramework.dll
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\MetroFramework.Design.dll
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\MetroFramework.dll
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\EntityFramework.xml
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.csprojResolveAssemblyReference.cache
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelCreate.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.Login.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.Properties.Resources.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.csproj.GenerateResource.Cache
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.exe
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.pdb
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.Dashboard.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesCreate.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineCreate.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerCreate.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineOfDiseasesCreate.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelList.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerList.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineList.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineEdit.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesList.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesEdit.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelEdit.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerEdit.resources
+C:\Users\ION-ASUS\Desktop\Projects\FormApp\Medicine\Medicine\obj\Debug\Medicine.PersonelForms.SmartMedicine.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\Medicine.exe.config
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.exe
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.pdb
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\Medicine.exe
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\Medicine.pdb
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\EntityFramework.dll
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\MetroFramework.Design.dll
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\MetroFramework.dll
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\EntityFramework.xml
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.csprojResolveAssemblyReference.cache
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.Dashboard.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesCreate.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesEdit.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.DiseasesList.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerCreate.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerEdit.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.ManufacturerList.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineCreate.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineEdit.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineList.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.MedicineOfDiseasesCreate.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelCreate.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelEdit.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.AdminForms.PersonelList.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.Login.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.PersonelForms.SmartMedicine.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.Properties.Resources.resources
+C:\Users\ION-DELL\Documents\Visual Studio 2015\Projects\Medicine\Medicine\Medicine\obj\Debug\Medicine.csproj.GenerateResource.Cache

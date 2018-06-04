@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
+using Medicine.Models;
+
+namespace Medicine.AdminForms
+{
+    public partial class DiseasesCreate : MetroForm
+    {
+        MedicalEntities db = new MedicalEntities();
+        
+        public DiseasesCreate()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Diseases disease = new Diseases();
+                disease.Name = txtDiseaseName.Text;
+                db.Diseases.Add(disease);
+                db.SaveChanges();
+                DialogResult result = MetroMessageBox.Show(this, "Hastalık başarıyla kayıt edildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    this.Hide();
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.ShowDialog();
+                }
+            }
+            catch (Exception)
+            {
+                DialogResult result = MetroMessageBox.Show(this, "Hastalık oluştururken hata ile karşılaşıldı.", "Hata !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+           
+        }
+    }
+}

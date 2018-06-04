@@ -1,0 +1,94 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
+using Medicine.Models;
+namespace Medicine.AdminForms
+{
+    public partial class PersonelList : MetroForm
+    {
+        public PersonelList()
+        {
+            InitializeComponent();
+        }
+       
+        private void PersonelList_Load(object sender, EventArgs e)
+        {
+            BindSource();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            PersonelCreate create = new PersonelCreate(this);
+            create.UpdateEventHandler += Create_UpdateEventHandler;
+            create.ShowDialog();
+        }
+
+        private void Create_UpdateEventHandler(object sender, PersonelCreate.UpdateEventArgs args)
+        {
+            BindSource();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MedicalEntities db = new MedicalEntities();
+                int id = int.Parse(grdPersonel.SelectedRows[0].Cells[0].Value.ToString());
+                Users user = db.Users.Find(id);
+                db.Users.Remove(user);
+                db.SaveChanges();
+                BindSource();
+                MetroMessageBox.Show(this, "Kullanıcı başarıyla silindi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(this, "Kullanıcı silinirken hata ile karşılaşıldı.","Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+          
+        }
+
+        public void BindSource()
+        {
+            grdPersonel.DataSource = null;
+
+            MedicalEntities db = new MedicalEntities();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("UserName", typeof(string));
+            dt.Columns.Add("NameSurname", typeof(string));
+            dt.Columns.Add("EMail", typeof(string));
+            dt.Columns.Add("Phone", typeof(string));
+            dt.Columns.Add("Password", typeof(string));
+            foreach (var item in db.Users.ToList())
+            {
+                DataRow dr = dt.NewRow();
+                dr["ID"] = item.ID;
+                dr["UserName"] = item.UserName;
+                dr["NameSurname"] = item.NameSurname;
+                dr["EMail"] = item.Email;
+                dr["Phone"] = item.Phone;
+                dr["Password"] = item.Password;
+                dt.Rows.Add(dr);
+            }
+            grdPersonel.DataSource = dt;
+            grdPersonel.Columns[0].HeaderText = "ID";
+            grdPersonel.Columns[1].HeaderText = "Kullanıcı Adı";
+            grdPersonel.Columns[2].HeaderText = "Ad Soyad";
+            grdPersonel.Columns[3].HeaderText = "E-Posta";
+            grdPersonel.Columns[4].HeaderText = "Telefon";
+            grdPersonel.Columns[5].HeaderText = "Parola";
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{130C2432-7A00-4AD0-8743-D2C650DB8D45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Medicine</RootNamespace>
+    <AssemblyName>Medicine</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\..\Desktop\DLL\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\..\..\Desktop\DLL\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\..\..\Desktop\DLL\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesCreate.Designer.cs">
+      <DependentUpon>DiseasesCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesEdit.Designer.cs">
+      <DependentUpon>DiseasesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\DiseasesList.Designer.cs">
+      <DependentUpon>DiseasesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerCreate.Designer.cs">
+      <DependentUpon>ManufacturerCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerEdit.Designer.cs">
+      <DependentUpon>ManufacturerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\ManufacturerList.Designer.cs">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\MedicineCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\MedicineCreate.Designer.cs">
+      <DependentUpon>MedicineCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\MedicineEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\MedicineEdit.Designer.cs">
+      <DependentUpon>MedicineEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\MedicineList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\MedicineList.Designer.cs">
+      <DependentUpon>MedicineList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\MedicineOfDiseasesCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\MedicineOfDiseasesCreate.Designer.cs">
+      <DependentUpon>MedicineOfDiseasesCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\PersonelCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\PersonelCreate.Designer.cs">
+      <DependentUpon>PersonelCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\PersonelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\PersonelEdit.Designer.cs">
+      <DependentUpon>PersonelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\PersonelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\PersonelList.Designer.cs">
+      <DependentUpon>PersonelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Diseases.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manufacturers.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedicineModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicineModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedicineModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedicineModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicineModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedicineOfDiseases.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medicines.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Roles.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users.cs">
+      <DependentUpon>MedicineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForms\SmartMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForms\SmartMedicine.Designer.cs">
+      <DependentUpon>SmartMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\DiseasesCreate.resx">
+      <DependentUpon>DiseasesCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\DiseasesEdit.resx">
+      <DependentUpon>DiseasesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\DiseasesList.resx">
+      <DependentUpon>DiseasesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\ManufacturerCreate.resx">
+      <DependentUpon>ManufacturerCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\ManufacturerEdit.resx">
+      <DependentUpon>ManufacturerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\ManufacturerList.resx">
+      <DependentUpon>ManufacturerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\MedicineCreate.resx">
+      <DependentUpon>MedicineCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\MedicineEdit.resx">
+      <DependentUpon>MedicineEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\MedicineList.resx">
+      <DependentUpon>MedicineList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\MedicineOfDiseasesCreate.resx">
+      <DependentUpon>MedicineOfDiseasesCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\PersonelCreate.resx">
+      <DependentUpon>PersonelCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\PersonelEdit.resx">
+      <DependentUpon>PersonelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\PersonelList.resx">
+      <DependentUpon>PersonelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForms\SmartMedicine.resx">
+      <DependentUpon>SmartMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="Models\MedicineModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MedicineModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Models\MedicineModel.edmx.diagram">
+      <DependentUpon>MedicineModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\MetroFramework.Design.dll" />
+    <Content Include="DLL\MetroFramework.dll" />
+    <Content Include="DLL\MetroFramework.Fonts.dll" />
+    <Content Include="Models\MedicineModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MedicineModel.edmx</DependentUpon>
+      <LastGenOutput>MedicineModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MedicineModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MedicineModel.edmx</DependentUpon>
+      <LastGenOutput>MedicineModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
